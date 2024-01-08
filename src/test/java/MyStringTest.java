@@ -23,8 +23,10 @@ public class MyStringTest {
     @Test
     public void method3() {
         MyString x = new MyString();
-        boolean result = x.method3("iadu");
-        Assertions.assertTrue(result);
+        boolean result1 = x.method3("iadu");
+        boolean result2 = x.method3("Radu");
+        Assertions.assertTrue(result1);
+        Assertions.assertFalse(result2);
     }
 
 
