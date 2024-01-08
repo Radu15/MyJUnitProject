@@ -5,9 +5,9 @@ import org.junit.jupiter.api.Test;
 public class ClculatorTest {
     private static Calculator calculator;
 
-    Calculator();
+    // Calculator();
 
-    calculator =new
+    // calculator =new
 
     @BeforeAll
     private static void BeforeAllMethod() {
@@ -22,6 +22,7 @@ public class ClculatorTest {
         Assertions.assertEquals(result, 5);
     }
 
+    @Test
     public void diffTest() {
         Calculator calculator = new Calculator();
         calculator.add(4, 2);
@@ -29,6 +30,7 @@ public class ClculatorTest {
         Assertions.assertEquals(result, 2);
     }
 
+    @Test
     public void multiplyTest() {
         Calculator calculator = new Calculator();
         calculator.add(4, 2);
@@ -36,6 +38,7 @@ public class ClculatorTest {
         Assertions.assertEquals(result, 8);
     }
 
+    @Test
     public void divideTest() {
         Calculator calculator = new Calculator();
         calculator.add(4, 2);
